@@ -29,6 +29,7 @@ function success(pos) {
 
 }
 function error(err) {
+    document.getElementsByTagName("main")[0].innerHTML = "Unable to retrieve your location. Please allow location access."
     console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
